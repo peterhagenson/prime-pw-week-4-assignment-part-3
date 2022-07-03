@@ -23,14 +23,13 @@ listItems = () => {
 listItems();
 
 // #3
-/*
+
 empty = () => {
   basket = [];
 };
 
 empty();
 console.log("return emptied basket", basket);
-*/
 
 //stretch goals
 
