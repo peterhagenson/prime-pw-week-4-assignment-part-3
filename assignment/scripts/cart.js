@@ -21,8 +21,9 @@ listItems = () => {
 };
 
 listItems();
-/*
+
 // #3
+/*
 empty = () => {
   basket = [];
 };
@@ -30,6 +31,7 @@ empty = () => {
 empty();
 console.log("return emptied basket", basket);
 */
+
 //stretch goals
 
 let maxItems = 5;
@@ -43,3 +45,28 @@ isFull = () => {
 };
 
 console.log(isFull());
+
+addItem = (item) => {
+  if (isFull() === false) {
+    basket.push(item);
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(addItem("donut"));
+console.log(basket);
+
+removeItem = (item) => {
+  let index = basket.indexOf(item);
+  if (index >= 0) {
+    let found = basket.splice(index, 1);
+    return found;
+  } else {
+    return null;
+  }
+};
+
+console.log(removeItem("pear"));
+console.log(basket);
